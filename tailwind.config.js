@@ -1,0 +1,46 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./*.html",
+    "./index.html",
+    "./main.js",
+    "./**/*.{html,js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'custom-image': "url('/src/assets/background.png')",
+        'statementBlur': 'src\assets\statementBlur.png',
+        'communityBlur': 'src\assets\communityBlur.png',
+      },
+      colors: {
+        black: "#0E0913",
+        'black-900': '#0a0a0a',
+        'black-600': '#4a4a4a',
+        'dark-blue': '#000080',
+        'customGreen-1': '#279B8D',
+        'customGreen-2': '#1CF8A9',
+        'web': '#74ACA5',
+        "webBtn": "#26AB9C",
+        'business':"#FFD147",
+        "businessBtn": "#FFD147",
+        "uiux1": "#6D4BB5",
+        "uiux2": "#222E6B",
+        "frontend": "#B85555",
+        "frontendBtn": "white",
+        "backendStart":"#003366",
+        "backendEnd":"#007B7B",
+        "backendBtn":"green",
+        "fullstack1":"#00FF00",
+        "fullstack2":"#0000FF",
+        'forestGreen': '#228B22',
+        dark: "#000703",
+        primary: "#CE9122",
+        primaryAlt: "#983FB4",
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+};
